@@ -3,3 +3,5 @@ C:\Users\USER\Desktop\ENSC\1A\2eme Semestre\Programmation avancée\Projet\Projet
 C:\Users\USER\Desktop\ENSC\1A\2eme Semestre\Programmation avancée\Projet\ProjetInfo2015_Flabeau_Eckert\ProjetInfo2015_Flabeau_Eckert\obj\x86\Debug\ProjetInfo2015_Flabeau_Eckert.exe
 C:\Users\USER\Desktop\ENSC\1A\2eme Semestre\Programmation avancée\Projet\ProjetInfo2015_Flabeau_Eckert\ProjetInfo2015_Flabeau_Eckert\obj\x86\Debug\ProjetInfo2015_Flabeau_Eckert.pdb
 C:\Users\USER\Desktop\ENSC\1A\2eme Semestre\Programmation avancée\Projet\ProjetInfo2015_Flabeau_Eckert\ProjetInfo2015_Flabeau_Eckert\obj\x86\Debug\ProjetInfo2015_Flabeau_Eckert.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\ProjetInfo2015_Flabeau_Eckert\ProjetInfo2015_Flabeau_Eckert\obj\x86\Debug\ProjetInfo2015_Flabeau_Eckert.exe
+C:\Users\USER\Documents\GitHub\ProjetInfo2015_Flabeau_Eckert\ProjetInfo2015_Flabeau_Eckert\obj\x86\Debug\ProjetInfo2015_Flabeau_Eckert.pdb

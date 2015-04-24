@@ -12,7 +12,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
 
         public TableRectangulaire () : base ()
         {
-            Largeur = 2;
+            Largeur = 1;
             Longueur = 3;
         }
 
