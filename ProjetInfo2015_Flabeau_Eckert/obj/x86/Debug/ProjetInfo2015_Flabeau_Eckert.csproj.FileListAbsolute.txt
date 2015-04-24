@@ -1,0 +1,5 @@
+C:\Users\USER\Desktop\ENSC\1A\2eme Semestre\Programmation avancée\Projet\ProjetInfo2015_Flabeau_Eckert\ProjetInfo2015_Flabeau_Eckert\bin\Debug\ProjetInfo2015_Flabeau_Eckert.exe
+C:\Users\USER\Desktop\ENSC\1A\2eme Semestre\Programmation avancée\Projet\ProjetInfo2015_Flabeau_Eckert\ProjetInfo2015_Flabeau_Eckert\bin\Debug\ProjetInfo2015_Flabeau_Eckert.pdb
+C:\Users\USER\Desktop\ENSC\1A\2eme Semestre\Programmation avancée\Projet\ProjetInfo2015_Flabeau_Eckert\ProjetInfo2015_Flabeau_Eckert\obj\x86\Debug\ProjetInfo2015_Flabeau_Eckert.exe
+C:\Users\USER\Desktop\ENSC\1A\2eme Semestre\Programmation avancée\Projet\ProjetInfo2015_Flabeau_Eckert\ProjetInfo2015_Flabeau_Eckert\obj\x86\Debug\ProjetInfo2015_Flabeau_Eckert.pdb
+C:\Users\USER\Desktop\ENSC\1A\2eme Semestre\Programmation avancée\Projet\ProjetInfo2015_Flabeau_Eckert\ProjetInfo2015_Flabeau_Eckert\obj\x86\Debug\ProjetInfo2015_Flabeau_Eckert.csprojResolveAssemblyReference.cache

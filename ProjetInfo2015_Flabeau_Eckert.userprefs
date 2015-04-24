@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="ProjetInfo2015_Flabeau_Eckert/ProjetInfo2015_Flabeau_Eckert.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetInfo2015_Flabeau_Eckert/FormuleNormale.cs">
+    <Files>
+      <File FileName="ProjetInfo2015_Flabeau_Eckert/Bar.cs" Line="1" Column="1" />
+      <File FileName="ProjetInfo2015_Flabeau_Eckert/Client.cs" Line="1" Column="1" />
+      <File FileName="ProjetInfo2015_Flabeau_Eckert/Formule.cs" Line="1" Column="1" />
+      <File FileName="ProjetInfo2015_Flabeau_Eckert/FormuleRapide.cs" Line="1" Column="1" />
+      <File FileName="ProjetInfo2015_Flabeau_Eckert/FormuleAuBar.cs" Line="1" Column="1" />
+      <File FileName="ProjetInfo2015_Flabeau_Eckert/FormuleGastronomique.cs" Line="1" Column="1" />
+      <File FileName="ProjetInfo2015_Flabeau_Eckert/FormuleNormale.cs" Line="15" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
