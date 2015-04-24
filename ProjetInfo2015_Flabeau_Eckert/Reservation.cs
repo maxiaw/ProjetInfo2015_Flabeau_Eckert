@@ -6,9 +6,9 @@ namespace ProjetInfo2015_Flabeau_Eckert
 	{
 		private int CompteurReservation = 0;
 		private int NumeroReservation{ get;set;}
-		Client ClientReservateur=new Client();
-		Formule FormuleChoisie=new Formule();
-		private DateTime dateTime=new DateTime();
+        Client ClientReservateur { get; set; }
+        Formule FormuleChoisie { get; set; }
+        private DateTime dateTime { get; set; }
 		private int NombreConvives{ get; set;}
 
 		public Reservation (Client clientReservateur, Formule formuleChoisie, DateTime date,int nbConvives)
