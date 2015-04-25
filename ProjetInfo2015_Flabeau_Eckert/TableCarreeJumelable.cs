@@ -34,11 +34,10 @@ namespace ProjetInfo2015_Flabeau_Eckert
                     {
                         TableRectangulaire NouvelleTable = new TableRectangulaire(this.Largeur, T.Largeur + this.Largeur, T.NombrePlacesOccupees + this.NombrePlacesOccupees);
                         this.EstJumelee = true;
-                        T.EstJumelee = true;
+                        T.EstJumelee = true; //Les deux tables deviennent jumelées
                         return NouvelleTable;
                     }
                 }
-
             }
             else if (T is TableRectangulaireJumelable)
             {
@@ -48,12 +47,16 @@ namespace ProjetInfo2015_Flabeau_Eckert
                     if (T.Largeur == this.Largeur) //Compatibilité des tables
                     {
                         TableRectangulaire NouvelleTable = new TableRectangulaire(this.Largeur, T.Longueur + this.Longueur, T.NombrePlacesOccupees + this.NombrePlacesOccupees);
-                        this.EstJumelee = true;
+                        this.EstJumelee = true; //Les deux tables deviennent jumelées
                         T.EstJumelee = true;
                         return NouvelleTable;
                     }
                 }
             }
+        }
+
+        public Table Separer(Table T)
+        {
 
         }
     }

@@ -14,12 +14,12 @@ namespace ProjetInfo2015_Flabeau_Eckert
             Longueur = 5;
         }
 
-        public Bar(int l, int Lo, int nbMax, int nbOccupees)
+        public Bar(int l, int Lo, int nbOccupees)
             : base()
         {
             Largeur = l;
             Longueur = Lo;
-            NombrePlacesMax = nbMax;
+            NombrePlacesMax = l+Lo;
             NombrePlacesOccupees = nbOccupees;
         }
     }

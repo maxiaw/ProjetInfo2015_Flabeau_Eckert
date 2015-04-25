@@ -22,6 +22,16 @@ namespace ProjetInfo2015_Flabeau_Eckert
             NombrePlacesMax = 2 * l + 2 * Lo;
             NombrePlacesOccupees = nbOccupees;
         }
+
+        public Table Jumeler(Table T)
+        {
+
+        }
+
+        public Table Separer(Table T)
+        {
+
+        }
     }
 }
 

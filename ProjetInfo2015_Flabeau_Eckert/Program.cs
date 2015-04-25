@@ -98,16 +98,13 @@ namespace ProjetInfo2015_Flabeau_Eckert
 		{
 			//Client Flabeau = new Client("Flabeau","987567321");
             Restaurant ChezLuigi = new Restaurant("ChezLuigi", 5, 2, 23, 30);
-            TableCarree Table = new TableCarree (2, 3) ;
-
-            ChezLuigi.AjouterTable(Table);
-
+            ChezLuigi.AjouterTable();
 			/*List<Client> maListe = Client.ChargerListeDeClient();// D'abord on charge la liste
 			maListe.Add (Viero);//on y ajoute l'objet
 			Client.EnregistrerListeDeClient (maListe); // Et on enregistre la liste. Client.Enregistrer... car cette méthode fait référence à la classe en général
             */
 			//Flabeau.EnregistrerClient ();
-            MenuPrincipal();
+            //MenuPrincipal();
 
             Console.ReadLine();
 		}
