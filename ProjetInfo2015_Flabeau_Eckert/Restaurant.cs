@@ -54,10 +54,9 @@ namespace ProjetInfo2015_Flabeau_Eckert
             }
             while ((typeTable < 1) || (typeTable > 4));
 
-            int Largeur =0;
-            int Longueur =0;
+            int Largeur = 0;
+            int Longueur = 0;
             int NbMax = 0;
-            bool Jumelable = false;
 
 
             if (typeTable == 1)

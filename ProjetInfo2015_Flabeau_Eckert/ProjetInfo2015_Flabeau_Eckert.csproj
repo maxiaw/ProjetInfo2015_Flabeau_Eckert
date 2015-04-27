@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Bar.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="FormuleAEmporter.cs" />
     <Compile Include="IJumelable.cs" />
     <Compile Include="Formule.cs" />
     <Compile Include="Program.cs" />
