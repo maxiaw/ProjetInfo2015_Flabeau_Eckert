@@ -22,15 +22,15 @@ namespace ProjetInfo2015_Flabeau_Eckert
 		}
 		public void AttribuerTable(DateTime D)
 		{
-			//tableauHoraire[i,j]=D;
+			
 		}
 		public void ModifierRerservation(DateTime D)
 		{
-			AttribuerTable (D);// Ajoutons nous un client à l'affectation de la table et de l'horaire?
+			AttribuerTable (D);
 		}
 		public override string ToString ()
 		{
-			string ch = "";// A gérer quand le tableau sera implémenté
+			string ch = "Réservation n°"+this.NumeroReservation+"\n"+"Client: "+ this.ClientReservateur + " \n " + " Formule choisie : "+ this.FormuleChoisie + " \n " + " Date : " + this.dateTime + " \n " + " Nombre de personnes : " + this.NombreConvives;// A gérer quand le tableau sera implémenté
 			return ch;
 		}
 	}

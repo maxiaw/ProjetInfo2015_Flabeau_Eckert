@@ -13,8 +13,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
             Largeur = 2;
         }
 
-        public TableCarree(int l, int nbOccupees)
-            : base()
+        public TableCarree(int l, int nbOccupees): base()
         {
             Largeur = l;
             NombrePlacesMax = 4 * l;

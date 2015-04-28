@@ -7,15 +7,13 @@ namespace ProjetInfo2015_Flabeau_Eckert
 {
     class TableRectangulaire : Table
     {
-        public TableRectangulaire()
-            : base()
+        public TableRectangulaire(): base()
         {
             Largeur = 1;
             Longueur = 3;
         }
 
-        public TableRectangulaire(int l, int Lo, int nbOccupees)
-            : base()
+        public TableRectangulaire(int l, int Lo, int nbOccupees): base()
         {
             Largeur = l;
             Longueur = Lo;

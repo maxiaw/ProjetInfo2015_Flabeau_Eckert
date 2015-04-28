@@ -7,15 +7,13 @@ namespace ProjetInfo2015_Flabeau_Eckert
 {
     class TableCarreeJumelable : Table, IJumelable
     {
-        public TableCarreeJumelable()
-            : base()
+        public TableCarreeJumelable() : base()
         {
             Largeur = 2;
             Longueur = Largeur;
         }
 
-        public TableCarreeJumelable(int l, int nbOccupees)
-            : base()
+        public TableCarreeJumelable(int l, int nbOccupees) : base()
         {
             Largeur = l;
             Longueur = Largeur;
@@ -23,7 +21,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
             NombrePlacesOccupees = nbOccupees;
         }
 
-        public Table Jumeler(Table T) //Juméle la table avec la table T
+        public Table Jumeler(Table T) //Jumèle la table avec la table T
         {
             if (T is TableCarreeJumelable)
             {
@@ -57,7 +55,6 @@ namespace ProjetInfo2015_Flabeau_Eckert
 
         public Table Separer(Table T) //Sépare la table de la table T
         {
-
 
         }
     }

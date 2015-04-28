@@ -140,7 +140,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
         {
             ListeFormules.Add(F);
         }
-        public void SupprimerTable(Formule F)
+        public void SupprimerFormule(Formule F)
         {
             ListeFormules.Remove(F);
         }
@@ -149,7 +149,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
         {
             ListeReservations.Add(R);
         }
-        public void SupprimerRéservation(Reservation R)
+        public void AnnulerRéservation(Reservation R)
         {
             ListeReservations.Remove(R);
         }
@@ -171,6 +171,29 @@ namespace ProjetInfo2015_Flabeau_Eckert
                 Console.WriteLine("Vous ne pouvez pas renvoyer de cuisinier, il n'y en aura plus aucun.");
             }
         }
+		public void AfficherLesFormules()
+		{
+			Console.WriteLine ("Liste des formules existantes dans le restaurant:");
+
+			foreach (Formule formule in ListeFormules) 
+			{
+				Console.WriteLine ("===========================================\n===========================================");
+				Console.WriteLine (formule.ToString());
+				Console.WriteLine ("===========================================\n===========================================");
+
+			}
+		}
+		public void AfficherListeReservations()
+		{
+			Console.WriteLine ("Voici la liste des réservations à venir de " + NomRestaurant + " : ");
+			foreach (Reservation Resa in ListeReservations) 
+			{
+				Console.WriteLine ("===========================================\n===========================================");
+				Console.WriteLine (Resa.ToString());
+				Console.WriteLine ("===========================================\n===========================================");
+
+			}
+		}
     }
 }
 
