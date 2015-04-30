@@ -33,6 +33,8 @@ namespace ProjetInfo2015_Flabeau_Eckert
                         TableRectangulaire NouvelleTable = new TableRectangulaire(this.Largeur, T.Largeur + this.Largeur, T.NombrePlacesOccupees + this.NombrePlacesOccupees);
                         this.EstJumelee = true;
                         T.EstJumelee = true; //Les deux tables deviennent jumelées
+                        NouvelleTable.TableauTablesJumelees[0] = this;
+                        NouvelleTable.TableauTablesJumelees[1] = T;
                         return NouvelleTable;
                     }
                 }
@@ -47,7 +49,9 @@ namespace ProjetInfo2015_Flabeau_Eckert
                         TableRectangulaire NouvelleTable = new TableRectangulaire(this.Largeur, T.Longueur + this.Largeur, T.NombrePlacesOccupees + this.NombrePlacesOccupees);
                         this.EstJumelee = true; //Les deux tables deviennent jumelées
                         T.EstJumelee = true;
-                        return NouvelleTable;
+                        NouvelleTable.TableauTablesJumelees[0] = this;
+                        NouvelleTable.TableauTablesJumelees[1] = T;
+                        return NouvelleTable;                      
                     }
                 }
             }

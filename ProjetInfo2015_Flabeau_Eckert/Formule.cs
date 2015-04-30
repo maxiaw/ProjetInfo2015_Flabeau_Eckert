@@ -9,9 +9,9 @@ namespace ProjetInfo2015_Flabeau_Eckert
 {
     abstract class Formule
     {
-        protected string NomFormule { get; set; }
-		protected int TempsDePreparation{ get; set;}
-		protected int EstimationTempsPresence{ get; set;}
+        public string NomFormule { get; protected set; }
+		public int TempsDePreparation{ get; protected set;}
+		public int EstimationTempsPresence{ get; protected set;}
 		
         public Formule() 
         {

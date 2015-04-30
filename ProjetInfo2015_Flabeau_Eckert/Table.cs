@@ -11,8 +11,9 @@ namespace ProjetInfo2015_Flabeau_Eckert
         public int NumeroTable { get; protected set; }
         public int NombrePlacesMax { get; protected set; }
         public int NombrePlacesOccupees { get; protected set; }
-		public bool EstJumelee { get; protected set; }
+		public bool EstJumelee { get; set; }
         public DateTime[,] TableauHoraires { get; protected set; }
+        public Table [] TableauTablesJumelees { get; protected set; } //Tableau contenant les 2 tables d'origine si la table est le résultat d'un jumelage
         public int Largeur { get; protected set; }
         public int Longueur { get; protected set; }
 
@@ -24,6 +25,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
             NombrePlacesOccupees = 0;
             EstJumelee = false;
             TableauHoraires = new DateTime[2, 100];
+            TableauTablesJumelees = new Table[2];
             Longueur = 1;
             Largeur = Longueur; //Table carrée par défaut
         }
