@@ -7,6 +7,8 @@ namespace ProjetInfo2015_Flabeau_Eckert
 {
     class Program
     {
+        Restaurant restaurant = new Restaurant();
+
         // Affichage du menu principal de l'application
         public static void MenuPrincipal()
         {
@@ -48,18 +50,18 @@ namespace ProjetInfo2015_Flabeau_Eckert
 
                     }
                     else              // si non sélectionné par l'utilisateur
-                    { 
-                        Console.WriteLine(string.Format("\n         {0} \n", ChoixMenu[i])); 
+                    {
+                        Console.WriteLine(string.Format("\n         {0} \n", ChoixMenu[i]));
                     }
                     i++;
                 }
                 deplaceCurseur = Console.ReadKey();
 
                 if ((deplaceCurseur.Key == ConsoleKey.UpArrow) && compteur > 0)
-                { compteur--; }    // Diminution du curseur lorsque l'on descend avec la touche du clavier
+                { compteur--; }    // Diminution du compteur
 
                 if ((deplaceCurseur.Key == ConsoleKey.DownArrow) && compteur < ChoixMenu.Count - 1)
-                { compteur++; }    // Augmentation du curseur lorsque l'on monte avec la touche du clavier
+                { compteur++; }    // Augmentation du compteur
             }
             while (deplaceCurseur.Key != ConsoleKey.Enter);// Tant que le gérant n'a rien sélectionné
 
@@ -73,7 +75,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
             if (compteur == 1)
             {
                 Console.Clear();
-                //Code à ajouter                
+                GererLeRestaurant();
             }
 
             if (compteur == 2)
@@ -91,21 +93,113 @@ namespace ProjetInfo2015_Flabeau_Eckert
                 Console.WriteLine("\t                  Maxime Eckert & Alice Flabeau\n");
                 Console.WriteLine("\t                              ~ * ~");
             }
-
         }
+
+        
+        //Affichage du sous-menu : Gérer le retaurant
+        public static void GererLeRestaurant()
+        {
+            List<string> ChoixMenu1 = new List<string>();        
+
+            ChoixMenu1.Add("     Ajouter une table au restaurant");
+            ChoixMenu1.Add("     Afficher la liste des tables");
+            ChoixMenu1.Add("     Retirer une table du restaurant");
+            ChoixMenu1.Add("     Afficher la liste des formules");
+            ChoixMenu1.Add("     Engager un cuisiner");
+            ChoixMenu1.Add("     Renvoyer un cuisinier");
+            ChoixMenu1.Add("     Retour au menu prinicpal");
+
+            ConsoleKeyInfo deplaceCurseur;                    
+            int compteur = 0;          
+
+            do
+            {
+                int i = 0;
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("\n                                GERER LE RESTAURANT");
+                Console.WriteLine("\n                                    ~ * ~   \n\n");
+                Console.ForegroundColor = ConsoleColor.White;
+
+
+                while (i < ChoixMenu1.Count)
+                {
+
+                    if (compteur == i)    
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkCyan;
+                        Console.WriteLine("\n                        {0} \n", ChoixMenu1[i]);
+                        Console.ForegroundColor = ConsoleColor.White;
+
+                    }
+                    else             
+                    {
+                        Console.WriteLine(string.Format("\n         {0} \n", ChoixMenu1[i]));
+                    }
+                    i++;
+                }
+                deplaceCurseur = Console.ReadKey();
+
+                if ((deplaceCurseur.Key == ConsoleKey.UpArrow) && compteur > 0)
+                { compteur--; }    
+
+                if ((deplaceCurseur.Key == ConsoleKey.DownArrow) && compteur < ChoixMenu1.Count - 1)
+                { compteur++; }    
+            }
+            while (deplaceCurseur.Key != ConsoleKey.Enter);// Tant que le gérant n'a rien sélectionné
+
+
+            if (compteur == 0)
+            {
+                Console.Clear();
+                restaurant.AjouterTable();
+            }
+
+            if (compteur == 1)
+            {
+                Console.Clear();
+                restaurant.AfficherLesTables();
+            }
+
+            if (compteur == 2)
+            {
+                Console.Clear();
+                //Choisir le numéro de la table que l'on veut supprimer
+            }
+
+            if (compteur == 3)
+            {
+                Console.Clear();
+                restaurant.AfficherLesFormules();              
+            }
+
+            if (compteur == 4)
+            {
+                Console.Clear();
+                restaurant.EngagerCuisinier();              
+            }
+
+            if (compteur == 5)
+            {
+                Console.Clear();
+                restaurant.RenvoyerCuisinier();              
+            }
+            
+            if (compteur == 6) // Retour au menu principal
+            {
+                Console.Clear();
+                MenuPrincipal();
+            }
+        }
+
+        //**************************************************
+        //****************** MAIN **************************
+        //**************************************************
 
 		public static void Main (string[] args)
 		{
-			//Client Flabeau = new Client("Flabeau","987567321");
-            //Restaurant ChezLuigi = new Restaurant("ChezLuigi", 5, 2, 23, 30);
-            //ChezLuigi.AjouterTable();
-			/*List<Client> maListe = Client.ChargerListeDeClient();// D'abord on charge la liste
-			maListe.Add (Viero);//on y ajoute l'objet
-			Client.EnregistrerListeDeClient (maListe); // Et on enregistre la liste. Client.Enregistrer... car cette méthode fait référence à la classe en général
-            */
-			//Flabeau.EnregistrerClient ();
             MenuPrincipal();
-            FormuleRapide F = new FormuleRapide ();
+            //FormuleRapide F = new FormuleRapide ();
 
             Console.ReadLine();
 		}

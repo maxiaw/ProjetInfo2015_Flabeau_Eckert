@@ -171,6 +171,19 @@ namespace ProjetInfo2015_Flabeau_Eckert
                 Console.WriteLine("Vous ne pouvez pas renvoyer de cuisinier, il n'y en aura plus aucun.");
             }
         }
+
+        public void AfficherLesTables()
+        {
+            Console.WriteLine("Liste des tables existantes dans le restaurant:");
+
+            foreach (Table table in ListeTables)
+            {
+                Console.WriteLine("===========================================\n===========================================");
+                Console.WriteLine(table.ToString());
+                Console.WriteLine("===========================================\n===========================================");
+            }
+        }
+
 		public void AfficherLesFormules()
 		{
 			Console.WriteLine ("Liste des formules existantes dans le restaurant:");
@@ -180,9 +193,9 @@ namespace ProjetInfo2015_Flabeau_Eckert
 				Console.WriteLine ("===========================================\n===========================================");
 				Console.WriteLine (formule.ToString());
 				Console.WriteLine ("===========================================\n===========================================");
-
 			}
 		}
+
 		public void AfficherListeReservations()
 		{
 			Console.WriteLine ("Voici la liste des réservations à venir de " + NomRestaurant + " : ");
@@ -191,7 +204,6 @@ namespace ProjetInfo2015_Flabeau_Eckert
 				Console.WriteLine ("===========================================\n===========================================");
 				Console.WriteLine (Resa.ToString());
 				Console.WriteLine ("===========================================\n===========================================");
-
 			}
 		}
     }
