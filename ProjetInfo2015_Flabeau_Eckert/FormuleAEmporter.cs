@@ -9,6 +9,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
     {
         public FormuleAEmporter() : base ()
         {
+            NomFormule = "FormuleAEmporter";
             TempsDePreparation = 10;
             EstimationTempsPresence = 10;
         }

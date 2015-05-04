@@ -28,7 +28,6 @@ namespace ProjetInfo2015_Flabeau_Eckert
             Console.WriteLine("                                      ~  *  ~");
             deplaceCurseur = Console.ReadKey();                // Obtient le caractère suivant ou la touche de fonction sur laquelle le gérant a appuyé
 
-
             do
             {
                 int i = 0;
@@ -37,11 +36,9 @@ namespace ProjetInfo2015_Flabeau_Eckert
                 Console.WriteLine("\n                                MENU PRINCIPAL");
                 Console.WriteLine("\n                                    ~ * ~   \n\n");
                 Console.ForegroundColor = ConsoleColor.White;
-
-
+                
                 while (i < ChoixMenu.Count)
                 {
-
                     if (compteur == i)     // si sélectionné par le gérant : changement de couleur pour que le gérant se situe dans le menu
                     {
                         Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -64,7 +61,6 @@ namespace ProjetInfo2015_Flabeau_Eckert
                 { compteur++; }    // Augmentation du compteur
             }
             while (deplaceCurseur.Key != ConsoleKey.Enter);// Tant que le gérant n'a rien sélectionné
-
 
             if (compteur == 0)
             {
@@ -118,19 +114,16 @@ namespace ProjetInfo2015_Flabeau_Eckert
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("\n                                GERER LE RESTAURANT");
-                Console.WriteLine("\n                                    ~ * ~   \n\n");
+                Console.WriteLine("\n                                        ~ * ~   \n\n");
                 Console.ForegroundColor = ConsoleColor.White;
-
 
                 while (i < ChoixMenu1.Count)
                 {
-
                     if (compteur == i)    
                     {
                         Console.ForegroundColor = ConsoleColor.DarkCyan;
                         Console.WriteLine("\n                        {0} \n", ChoixMenu1[i]);
                         Console.ForegroundColor = ConsoleColor.White;
-
                     }
                     else             
                     {

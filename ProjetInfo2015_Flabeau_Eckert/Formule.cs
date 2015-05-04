@@ -10,8 +10,8 @@ namespace ProjetInfo2015_Flabeau_Eckert
     abstract class Formule
     {
         public string NomFormule { get; protected set; }
-		public int TempsDePreparation{ get; protected set;}
-		public int EstimationTempsPresence{ get; protected set;}
+		public double TempsDePreparation { get; protected set;} //En minutes
+        public double EstimationTempsPresence { get; protected set; } //En minutes
 		
         public Formule() 
         {
@@ -22,7 +22,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
             XmlNode TempsDePrepa = xmlDoc.CreateElement("TempsDePreparation");
             TempsDePrepa.InnerText = TempsDePreparation.ToString();
             rootNode.AppendChild(TempsDePrepa);
-            XmlNode TempsPresence = xmlDoc.CreateElement("TempsDePreparation");
+            XmlNode TempsPresence = xmlDoc.CreateElement("TempsDePresence");
             TempsPresence.InnerText = EstimationTempsPresence.ToString();
             rootNode.AppendChild(TempsPresence);
 

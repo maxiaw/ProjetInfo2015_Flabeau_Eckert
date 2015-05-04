@@ -6,6 +6,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
 	{
 		public FormuleRapide () : base ()
 		{
+            NomFormule = "FormuleRapide";
 			TempsDePreparation = 10;
 			EstimationTempsPresence = 20;
 		}
