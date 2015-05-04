@@ -10,12 +10,12 @@ namespace ProjetInfo2015_Flabeau_Eckert
     abstract class Formule
     {
         public string NomFormule { get; protected set; }
-		public int TempsDePreparation{ get; protected set;}
-		public int EstimationTempsPresence{ get; protected set;}
+		public double TempsDePreparation { get; protected set;} //En minutes
+        public double EstimationTempsPresence { get; protected set; } //En minutes
 		
         public Formule() 
         {
-                  
+
         }
 		public void EnregistrerFormule(XmlDocument xmlDoc, XmlNode rootNode)// Enregistre dans le fichier XML l'objet
 		{

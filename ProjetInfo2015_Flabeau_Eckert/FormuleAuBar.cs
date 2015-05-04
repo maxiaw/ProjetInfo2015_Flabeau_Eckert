@@ -6,7 +6,9 @@ namespace ProjetInfo2015_Flabeau_Eckert
 	{
 		public FormuleAuBar () : base ()
 		{
+
 			NomFormule = "FormuleAuBar";
+
 
 			TempsDePreparation = 5;
 			EstimationTempsPresence = 20;

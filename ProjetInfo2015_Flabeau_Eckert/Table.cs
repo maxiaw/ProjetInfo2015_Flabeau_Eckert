@@ -25,7 +25,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
             NombrePlacesOccupees = 0;
             EstJumelee = false;
             TableauHoraires = new DateTime[2, 100];
-            TableauTablesJumelees = new Table[2];
+            TableauTablesJumelees = new Table[2]; //Tableau contenant les 2 tables d'origine pour un jumelage
             Longueur = 1;
             Largeur = Longueur; //Table carrée par défaut
         }

@@ -8,6 +8,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
 		{
 			NomFormule = "FormuleNormale";
 
+
 			TempsDePreparation = 15;
 			EstimationTempsPresence = 30;
 		}

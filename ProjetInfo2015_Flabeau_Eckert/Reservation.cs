@@ -11,6 +11,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
         public Formule FormuleChoisie { get; protected set; }
         public DateTime DateReservation { get; protected set; }
         public int NombreConvives { get; protected set; }
+        public Table TableAssociee { get; protected set; }
 
 		public Reservation (Client clientReservateur, Formule formuleChoisie, DateTime date, int nbConvives)
 		{
@@ -21,15 +22,16 @@ namespace ProjetInfo2015_Flabeau_Eckert
 			CompteurReservation++;
 			NumeroReservation += CompteurReservation;
 		}
+
 		public void AttribuerTable(Table T)
 		{
             int i=0;
             while (i < T.TableauHoraires.Length)
             {
-                if (T.TableauHoraires[0, i] == null) //On remplit la première case non nulle
+                if (T.TableauHoraires[0, i] == null) //On remplit la première case nulle
                 {
                     T.TableauHoraires[0, i] = DateReservation;
-                    T.TableauHoraires[1, i] = DateReservation + FormuleChoisie.TempsDePreparation + FormuleChoisie.EstimationTempsPresence;
+                    T.TableauHoraires[1, i] = DateReservation.AddMinutes(FormuleChoisie.TempsDePreparation + FormuleChoisie.EstimationTempsPresence);
                 }
                 i++;
             }

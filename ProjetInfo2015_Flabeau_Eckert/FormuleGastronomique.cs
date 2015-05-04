@@ -7,7 +7,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
 		public FormuleGastronomique () : base ()
 		{
 			NomFormule = "FormuleGastronomique";
-
+	
 			TempsDePreparation = 60;
 			EstimationTempsPresence = 120;
 		}
