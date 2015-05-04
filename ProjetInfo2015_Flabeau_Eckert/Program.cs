@@ -2,6 +2,7 @@
 using System.Xml.Serialization;
 using System.IO;
 using System.Collections.Generic;
+using System.Xml;
 
 namespace ProjetInfo2015_Flabeau_Eckert
 {
@@ -96,18 +97,16 @@ namespace ProjetInfo2015_Flabeau_Eckert
 
 		public static void Main (string[] args)
 		{
-			//Client Flabeau = new Client("Flabeau","987567321");
-            //Restaurant ChezLuigi = new Restaurant("ChezLuigi", 5, 2, 23, 30);
-            //ChezLuigi.AjouterTable();
-			/*List<Client> maListe = Client.ChargerListeDeClient();// D'abord on charge la liste
-			maListe.Add (Viero);//on y ajoute l'objet
-			Client.EnregistrerListeDeClient (maListe); // Et on enregistre la liste. Client.Enregistrer... car cette méthode fait référence à la classe en général
-            */
-			//Flabeau.EnregistrerClient ();
-            MenuPrincipal();
-            FormuleRapide F = new FormuleRapide ();
+			
+			Console.WriteLine ("TEST");
+			Restaurant RestoTest = new Restaurant ();
+			FormuleAEmporter Nouilles = new FormuleAEmporter ();
+			FormuleAuBar tequila = new FormuleAuBar ();
 
-            Console.ReadLine();
+			RestoTest.AjouterFormule (Nouilles);
+			RestoTest.AjouterFormule (tequila);
+			RestoTest.SauvegarderFormules();
+			Console.ReadLine ();
 		}
 	}
 }

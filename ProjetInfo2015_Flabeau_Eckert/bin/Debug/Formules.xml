@@ -1,0 +1,4 @@
+<Formules>
+  <Formule NomFormule="FormuleAEmporter" TempsDePreparation="10" EstimationTempsPresence="10" />
+  <Formule NomFormule="FormuleAuBar" TempsDePreparation="5" EstimationTempsPresence="20" />
+</Formules>

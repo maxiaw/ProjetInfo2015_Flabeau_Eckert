@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="ProjetInfo2015_Flabeau_Eckert/ProjetInfo2015_Flabeau_Eckert.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetInfo2015_Flabeau_Eckert/Client.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProjetInfo2015_Flabeau_Eckert/TableRectangulaire.cs">
     <Files>
+      <File FileName="ProjetInfo2015_Flabeau_Eckert.userprefs" Line="1" Column="1" />
       <File FileName="ProjetInfo2015_Flabeau_Eckert/Bar.cs" Line="1" Column="1" />
-      <File FileName="ProjetInfo2015_Flabeau_Eckert/Client.cs" Line="1" Column="1" />
+      <File FileName="ProjetInfo2015_Flabeau_Eckert/Client.cs" Line="44" Column="23" />
       <File FileName="ProjetInfo2015_Flabeau_Eckert/Formule.cs" Line="1" Column="1" />
       <File FileName="ProjetInfo2015_Flabeau_Eckert/FormuleRapide.cs" Line="1" Column="1" />
       <File FileName="ProjetInfo2015_Flabeau_Eckert/FormuleAuBar.cs" Line="1" Column="1" />

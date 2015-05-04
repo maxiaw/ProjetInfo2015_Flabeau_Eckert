@@ -15,20 +15,33 @@ namespace ProjetInfo2015_Flabeau_Eckert
 		
         public Formule() 
         {
-            XmlDocument xmlDoc = new XmlDocument();
-            XmlNode rootNode = xmlDoc.CreateElement("Formule");
-            xmlDoc.AppendChild(rootNode);
-
-            XmlNode TempsDePrepa = xmlDoc.CreateElement("TempsDePreparation");
-            TempsDePrepa.InnerText = TempsDePreparation.ToString();
-            rootNode.AppendChild(TempsDePrepa);
-            XmlNode TempsPresence = xmlDoc.CreateElement("TempsDePreparation");
-            TempsPresence.InnerText = EstimationTempsPresence.ToString();
-            rootNode.AppendChild(TempsPresence);
-
-            xmlDoc.Save("Formule.xml");        
+                  
         }
+		public void EnregistrerFormule(XmlDocument xmlDoc, XmlNode rootNode)// Enregistre dans le fichier XML l'objet
+		{
 
+			xmlDoc.AppendChild(rootNode);
+
+			XmlNode userNode = xmlDoc.CreateElement("Formule");
+			rootNode.AppendChild(userNode);
+
+			XmlAttribute attribute = xmlDoc.CreateAttribute("NomFormule");
+			attribute.Value = this.NomFormule;
+			userNode.Attributes.Append(attribute);
+			rootNode.AppendChild(userNode);
+
+			attribute = xmlDoc.CreateAttribute("TempsDePreparation");
+
+			attribute.Value = this.TempsDePreparation.ToString();
+			userNode.Attributes.Append(attribute);
+
+			attribute = xmlDoc.CreateAttribute("EstimationTempsPresence");
+			attribute.Value = this.EstimationTempsPresence.ToString();
+			userNode.Attributes.Append(attribute);
+
+			rootNode.AppendChild(userNode);
+
+		}
 		public override string ToString ()
 		{
 			string ch = "Formule: "+ NomFormule + " \n " + "Temps de préparation: " + TempsDePreparation + " min\n " + " Estimation du temps de présence du client : " + EstimationTempsPresence + " min";

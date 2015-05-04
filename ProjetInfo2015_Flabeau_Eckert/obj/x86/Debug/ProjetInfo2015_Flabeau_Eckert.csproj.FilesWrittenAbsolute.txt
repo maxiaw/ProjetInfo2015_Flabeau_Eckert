@@ -1,2 +1,5 @@
 /Users/maxime/Projects/ProjetInfo2015_Flabeau_Eckert/ProjetInfo2015_Flabeau_Eckert/obj/x86/Debug/.NETFramework,Version=v4.0,Profile=Client.AssemblyAttribute.cs
 /Users/maxime/Projects/ProjetInfo2015_Flabeau_Eckert/ProjetInfo2015_Flabeau_Eckert/obj/x86/Debug/ProjetInfo2015_Flabeau_Eckert.exe
+/Users/maxime/Projects/ProjetInfo2015_Flabeau_Eckert/ProjetInfo2015_Flabeau_Eckert/bin/Debug/ProjetInfo2015_Flabeau_Eckert.exe.mdb
+/Users/maxime/Projects/ProjetInfo2015_Flabeau_Eckert/ProjetInfo2015_Flabeau_Eckert/bin/Debug/ProjetInfo2015_Flabeau_Eckert.exe
+/Users/maxime/Projects/ProjetInfo2015_Flabeau_Eckert/ProjetInfo2015_Flabeau_Eckert/obj/x86/Debug/ProjetInfo2015_Flabeau_Eckert.exe.mdb

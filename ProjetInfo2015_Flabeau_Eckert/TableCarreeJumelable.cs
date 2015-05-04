@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -58,7 +58,4 @@ namespace ProjetInfo2015_Flabeau_Eckert
 
         }
     }
-}
-
-
-
+}*/

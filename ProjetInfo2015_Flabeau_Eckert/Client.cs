@@ -14,6 +14,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
 
         public Client()
         {
+
         }
 
         public Client(string nom, string num)
@@ -22,14 +23,14 @@ namespace ProjetInfo2015_Flabeau_Eckert
             NumeroTelephone = num;
         }
 
-        public void EnregistrerClient()// Enregistre dans le fichier XML l'objet
+		public void EnregistrerClient(XmlDocument xmlDoc, XmlNode rootNode)// Enregistre dans le fichier XML l'objet
         {
 
-			XmlDocument xmlDoc = new XmlDocument();
-			XmlNode rootNode = xmlDoc.CreateElement("Clients");
 			xmlDoc.AppendChild(rootNode);
 
 			XmlNode userNode = xmlDoc.CreateElement("Client");
+			rootNode.AppendChild(userNode);
+
 			XmlAttribute attribute = xmlDoc.CreateAttribute("Nom");
 			attribute.Value = this.Nom;
 			userNode.Attributes.Append(attribute);
@@ -41,7 +42,6 @@ namespace ProjetInfo2015_Flabeau_Eckert
 	
 			rootNode.AppendChild(userNode);
 
-			xmlDoc.Save("Client.xml");
         }
 
         public static Client ChargerClient()// Lit l'objet dans le fichier XML

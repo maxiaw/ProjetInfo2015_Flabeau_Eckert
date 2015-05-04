@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
+using System.Xml;
 
 namespace ProjetInfo2015_Flabeau_Eckert
 {
@@ -40,7 +42,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
             MinutesFinDeService = m;           
         }
 
-        public void AjouterTable()
+       /* public void AjouterTable()
         {
             int typeTable = 0;
             do
@@ -129,7 +131,7 @@ namespace ProjetInfo2015_Flabeau_Eckert
                     ListeTables.Add(TableCarree);
                 }
             }   
-        }
+        }*/
 
         public void SupprimerTable(Table T)
         {
@@ -183,6 +185,18 @@ namespace ProjetInfo2015_Flabeau_Eckert
 
 			}
 		}
+
+		public void SauvegarderFormules()
+		{
+			XmlDocument Formules = new XmlDocument ();
+			XmlNode Noeudracine = Formules.CreateElement("Formules");
+			foreach (Formule F in ListeFormules) 
+			{
+				F.EnregistrerFormule (Formules,Noeudracine);
+			}
+			Formules.Save ("Formules.xml");
+		}
+
 		public void AfficherListeReservations()
 		{
 			Console.WriteLine ("Voici la liste des réservations à venir de " + NomRestaurant + " : ");
